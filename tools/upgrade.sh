@@ -1,5 +1,6 @@
 printf '\033[0;34m%s\033[0m\n' "Upgrading Oh My Zsh"
 cd "$ZSH"
+git remote add original https://github.com/robbyrussell/oh-my-zsh.git
 git fetch original
 git merge original/master
 git push origin master
